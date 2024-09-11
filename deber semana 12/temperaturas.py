@@ -75,7 +75,7 @@ temperaturas = [
             {"day": "Domingo", "temp": 80}
         ]
     ],
-    [   # Ciudad 3
+    [   # QUITO
         [   # Semana 1
             {"day": "Lunes", "temp": 90},
             {"day": "Martes", "temp": 92},
@@ -116,8 +116,8 @@ temperaturas = [
 ]
 
 # Calcular el promedio de temperaturas para cada ciudad y semana
-for ciudad in temperaturas:
-    for semana in ciudad:
+for quito in temperaturas:
+    for semana in quito:
         suma = 0
         for dia in semana:
             suma += dia['temp']
@@ -128,11 +128,12 @@ while True:
     print("1 ciudad 1")
     print("2 ciudad 2")
     print("3 ciudad 3")
+    print("4 quito")
     print("s    alir")
 
     opcion =input("ingrese una opcion: ")
     if opcion == "1" :
-        ciudad = temperaturas [0]
-        print(ciudad)
+        quito= temperaturas
+        print(quito)
     else:
       print("incorrecto")
